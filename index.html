@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>(a^🗡️)</title>
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@0.122.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.122.0/examples/jsm/"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <script type="module" src="js/animation.js"></script>
+
+        <header id="landing_page_header">
+            <a class="logo" href="/"><img src="assets/andrew.png" alt="logo" width="150px"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#about">./<b>about</b></a></li>
+                    <li><a href="https://github.com/nullcline">./<b>projects</b></a></li>
+                    <li><a href="https://substack.com/@nullcline">./<b>blog</b></a></li>
+                </ul>
+            </nav>
+
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="pages/about.html">About</a>
+                <a href="https://github.com/nullcline">Projects</a>
+                <a href="https://substack.com/@nullcline">Blog</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/mobile.js"></script>
+
+        <div id="transition_bottom">
+            <h1></h1>
+        </div>
+
+        <div class="about">
+            <h1 id="about">About Me</h1>
+            <br>
+            <p>
+                My name is Andrew.
+                <br><br>
+                I am an <b>engineering physicist</b>, amateur videographer, and aspiring polymath.
+                <br><br>
+                I enjoy working on complex and chaotic multidisiplinary problems, with a focus on the <b>intersection of physics, engineering, and computer science</b>. My current interests include nuclear fusion, brain-computer interfaces, and machine learning.
+            </p>
+            <p>
+                <br>
+                I've previously interned at <a href="https://generalfusion.com/">General Fusion</a>, on both the Systems Engineering and Controls Engineering teams where I worked to make nuclear fusion a reality, as well as at <a href="https://www.tesla.com/">Tesla</a>, on the Sensors team, where I tried to prevent cars from getting lost. Besides that, I've dedicated a lot of my free time to my university design team, <a href="https://ubcaerodesign.com/">UBC AeroDesign</a>, where I lead the Avionics division and work to imbue our airplanes with consciousness.
+                <br><br>
+            </p>
+            <button onclick="window.location.href='files/andrew-resume-2023_06_30.pdf'" id="resume_button">Résumé</button>
+            <br>
+            <p>
+                <center>
+                    <a href="mailto:nullcline@protonmail.com">nullcline@protonmail.com</a> -
+                    <a href="files\0x0E3AE512-pub.asc">PGP</a> -
+                    <a href="https://twitter.com/0xnullcline">/0xnullcline</a>
+                </center>
+                <br><br>
+            </p>
+        </div>
+
+    </body>
+
+
+</html>
