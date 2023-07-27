@@ -181,9 +181,9 @@ html {
   overflow: auto;
   scroll-snap-align: start;
   position: absolute;
-  width: 50vw;
+  width:100vw;
   top: 110vh;
-  left: 50%;
+  left: 100%;
   transform: translate(-50%, 0%);
 
   color: white;
