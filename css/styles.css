@@ -338,39 +338,5 @@ html {
   background: url(../assets/stretch.png);
 }
 
-dialog {
-	/* UPDATE: --open / syncs styles with dialog state */
-	--open: 0;
 
-	/* READ: --closed / exposed for styling convenience */
-	--closed: calc(1 - var(--open));
-
-	transform: translateY(calc(var(--closed) * -50%));
-	&, &::backdrop {
-		/* This works like a conditional statement */
-		--duration: calc((var(--open) * 0.5s) + (var(--closed) * 0.25s));
-
-		transition: all var(--duration) ease-out allow-discrete;
-		opacity: var(--open);
-	}
-
-	&[open] {
-		--open: 1;
-	}
-
-	@starting-style {
-		--open: 1;
-		&[open] {
-			--open: 0;
-		}
-	}
-}
-
-/* styling the trigger button to be center in the frame */
-button[onClick] {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
