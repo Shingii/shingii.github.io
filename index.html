@@ -34,6 +34,17 @@
                 </ul>
             </nav>
 
+            <button onClick="window.dialog.showModal()">Open Dialog</button>
+
+<dialog id="dialog">
+	<h2>Hello</h2>
+	<p>Click the button or press esc to close</p>
+	<input type="text" placeholder="You shouldn't be able to type in me until I'm open">
+	<form method="dialog">
+		<button type="submit">Close</button>
+	</form>
+</dialog>
+            
             <p class="menu cta">Menu</p>
         </header>
         <div id="mobile__menu" class="overlay">
