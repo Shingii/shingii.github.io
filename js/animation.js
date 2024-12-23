@@ -1,5 +1,6 @@
+// universe.js
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 let camera, controls, scene, renderer, pc, group, mouse, raycaster;
 // prettiest initial conditions
@@ -21,7 +22,7 @@ function init() {
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight);
     renderer.setClearColor( 0x080808, 1 );
-    document.body.appendChild( renderer.domElement );
+    document.getElementById('universe-container').appendChild( renderer.domElement );
 
     group = new THREE.Group();
 
