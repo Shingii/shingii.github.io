@@ -14,7 +14,31 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>(Vaeso)</title>
+        <link rel="icon" type="image/x-icon" href="assets/vaeso.ico">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@0.122.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.122.0/examples/jsm/"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <script type="module" src="js/animation.js"></script>
 
+}
+</script>
 #canvas {
   background-color: #007;
   width: 200px;
