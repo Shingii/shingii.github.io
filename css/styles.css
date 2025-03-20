@@ -14,7 +14,24 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-
+<div id="universe-container"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Theme with Three.js Universe</title>
+    <link rel="stylesheet" href="new-theme.css">
+</head>
+<body>
+    <h1>Welcome to the New Theme</h1>
+    <div id="universe-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="universe.js"></script>
+</body>
+</html>
+}
+</script>
 #canvas {
   background-color: #007;
   width: 200px;
@@ -337,3 +354,6 @@ html {
 #spirit_avionics {
   background: url(../assets/stretch.png);
 }
+
+
+
