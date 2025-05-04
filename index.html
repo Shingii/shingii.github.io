@@ -270,20 +270,39 @@ Example: Message passing.
 </figure>
 <h2 id="media">Media</h2>
 <p>Media objects are supported, like images and video:</p>
-<figure>
-<img src="Vaeso-Large_White.png" alt="Vaeso logo" />
+<figure style="margin: 0; padding: 2rem; text-align: center;">
+  <img 
+    src="Vaeso-Large_White.png" 
+    alt="Vaeso logo" 
+    style="max-width: 300px; width: 100%; height: auto;" 
+  />
 </figure>
-<!-- Vimeo video -->
-<figure>
-  <iframe 
-    title="Vimeo Player"
-    src="https://player.vimeo.com/video/1000737060"
-    width="640"
-    height="360"
-    frameborder="3"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+
+<style>
+  .fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* optional: prevents scrolling */
+  }
+</style>
+
+<iframe
+  class="fullscreen-video"
+  src="<iframe src="https://player.vimeo.com/video/1000737060?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="720" height="1280" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Night On the Terrace - 2021 Recap"></iframe>"
+  title="Vimeo Player"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
 </figure>
 <h2 id="discussion">Discussion</h2>
 <p>
